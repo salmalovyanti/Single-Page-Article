@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+body {
+    font-family: "Ubuntu", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ED6A5A;
+}
+header, footer {
+    background-color: white;
+    color: #DB3A34;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1, nav{
+    margin: 1.5rem;
+}
+nav {
+    background-color: #F4F1BB;
+    color: #00275e;
+    padding: 1rem;
+    text-align: center;
+}
+nav button {
+    background-color: #ED6A5A;
+    font-weight: 500;
+    border: 1px solid #00275e;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+}
+main {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+#content {
+    flex: 2;
+    padding: 1rem;
+}
+article {
+    background-color: #ffffe4;
+    color: #00275e;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+}
+aside {
+    flex: 1;
+    padding: 1rem;
+    color: #00275e;
+    background-color: #ffffe4;
+    margin-left: 1rem;
+}
+aside img {
+    max-width: 100%;
+    height: auto;
+}
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+    aside {
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+}
